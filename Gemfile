@@ -18,7 +18,18 @@ end
 group :test do
 	gem 'rspec', '2.0.0.beta.18'
 	gem 'factory_girl_rails', '1.0'
+	gem 'cucumber'
 end
+
+group :cucumber do
+	gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'spork'
+  gem 'launchy'    # So you can do Then show me the page
+end
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
